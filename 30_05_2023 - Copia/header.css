@@ -1,0 +1,239 @@
+header {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px 10px;
+}
+/* tablet */
+
+.mainlogo {
+  display: flex;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 45px;
+  transition: background-color 0.25s ease;
+}
+
+.logoWrapper svg {
+  width: 30px;
+  fill: var(--color-text);
+}
+.navBar {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.navBar a {
+  text-decoration: none;
+}
+
+.navBarItems {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  border-radius: 45px;
+  align-items: center;
+  color: var(--color-text);
+}
+.navBarItems svg {
+  width: 25px;
+  fill: var(--color-text);
+}
+
+.navBarLink text {
+  text-decoration: none;
+}
+.navBarLink {
+  border-radius: 45px;
+  transition: background-color 0.25s ease;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+/* .active{
+    font-weight: 600;
+} */
+
+.text {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 50px;
+  text-align: left;
+}
+/* button */
+.buttonElement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 45px;
+  transition: background-color 0.25s ease;
+  font-weight: 300;
+  font-size: 20px;
+  background-color: var(--color-click);
+}
+
+/* profile Image */
+.navBarProfileButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+  transition: background-color 0.25s ease;
+  border-radius: 45px;
+  height: 50px;
+  width: 100%;
+  padding: 30px;
+}
+
+.navBarProfileButton:hover {
+  background-color: var(--color-hover);
+}
+
+.imgProfile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  min-width: 50px;
+}
+
+.imgProfile img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.textProfile {
+  font-size: 12px;
+}
+
+.textProfile .name {
+  font-weight: 400;
+}
+
+.textProfile .surname {
+  font-weight: 200;
+}
+
+.interactionProfile svg {
+  fill: var(--color-text);
+  width: 30px;
+}
+
+/* .navBarItems:hover {
+  background-color: var(--color-hover);
+} */
+
+.buttonTweet {
+  width: 100%;
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  header {
+    width: 88px;
+    align-items: center;
+  }
+  /* navbar Logo */
+  .logoWrapper:active {
+    background-color: var(--color-hover);
+  }
+
+  .navBarItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navBarItems .text {
+    display: none;
+  }
+  .navBarItems:active {
+    background-color: var(--color-hover);
+  }
+
+  .icon:active {
+    fill: var(--color-text);
+  }
+  /* .navBarLink {
+    width: 50px;
+  } */
+
+  .logoWrapper {
+    width: auto;
+  }
+
+  .buttonElement {
+    width: 60px;
+    height: 60px;
+  }
+  .buttonElement svg {
+    fill: var(--color-text);
+    width: 30px;
+  }
+  .buttonElement .text {
+    display: none;
+  }
+
+  .textProfile {
+    display: none;
+  }
+  .interactionProfile {
+    display: none;
+  }
+  .navBarProfileButton {
+    width: 50px;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .logoWrapper:active {
+    background-color: var(--color-hover);
+  }
+
+  .buttonElement {
+    background-color: var(--color-click);
+    width: 100%;
+  }
+
+  .buttonElement svg {
+    display: none;
+  }
+
+  /* .icon svg:hover {
+    background-color: var(--color-hover);
+  } */
+
+  .mainlogo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttonElement:hover {
+    background-color: var(--color-click-hover);
+  }
+
+  .buttonElement .text {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .navBarLink:hover {
+    background-color: var(--color-hover);
+  }
+}

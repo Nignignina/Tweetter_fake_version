@@ -1,0 +1,33 @@
+.wrapperTweet {
+  border-top: 1px solid var(--color-bord);
+
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+}
+
+.wrapperImg img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.wrapperText {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  font-weight: 200;
+}
+
+.nameProfile {
+  font-weight: 400;
+  margin-right: 10px;
+  font-size: 14px;
+}
+/* homebar central content */
+
+.nickname {
+  font-size: 12px;
+  color: var(--color-bord);
+}

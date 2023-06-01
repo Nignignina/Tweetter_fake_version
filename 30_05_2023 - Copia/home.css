@@ -1,0 +1,124 @@
+.tabBar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tabBarTitle {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.tabsBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tab {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  font-size: 14px;
+}
+
+.tab::after {
+  content: "";
+  width: 20%;
+  height: 4px;
+  background-color: var(--color-click);
+  left: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 96%;
+  border-radius: 5px;
+  opacity: 0;
+  font-weight: 200;
+
+  transition: all 0.25s ease;
+}
+
+.tab:hover {
+  background-color: var(--color-hover);
+}
+.active.tab::after {
+  opacity: 1;
+  font-weight: 600;
+}
+
+/* tweetBar */
+.tweetBar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.tweetBarProfile {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.tweetBarProfile img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.tweetBarContent {
+  width: calc(100% - 68px);
+}
+
+#tweetButton {
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 20px;
+  outline: none;
+  color: var(--color-text-light);
+}
+
+.barActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.tweeticons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.25s ease;
+}
+
+.icon:hover {
+  background-color: var(--color-bg-brand);
+}
+
+.icon:hover svg {
+  fill: var(--color-brand);
+  width: 20px;
+  height: auto;
+}
